@@ -45,5 +45,5 @@ export const socialLinks = [
 // export const projects_url = "http://localhost:1337/projects";
 // export const courses_url = "https://localhost:1337/courses";
 
-export const projects_url = "https://monika-api-1.herokuapp.com/projects";
 export const courses_url = "https://monika-api-1.herokuapp.com/courses";
+export const projects_url = "https://monika-api-1.herokuapp.com/projects";

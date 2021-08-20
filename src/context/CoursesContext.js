@@ -1,7 +1,6 @@
 import React from "react";
 import { useFetch } from "../utils/UseFetch";
-const url = "http://localhost:1337/courses";
-
+import { courses_url as url } from "../utils/constants";
 const CoursesContext = React.createContext();
 
 const CoursesProvider = ({ children }) => {

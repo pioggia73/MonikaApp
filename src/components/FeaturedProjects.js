@@ -8,6 +8,8 @@ import SingleProject from "./SingleProject";
 const FeaturedProjects = ({ title }) => {
   const { projects, isLoading, isError } = React.useContext(ProjectsContext);
 
+  console.log(projects);
+
   if (isLoading) {
     return <h3>Loading ...</h3>;
   }
