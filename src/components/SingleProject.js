@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaShareSquare } from "react-icons/fa";
-const api_url = "http://localhost:1337";
+//const api_url = "http://localhost:1337";
+
+const api_url = "https://monika-api-1.herokuapp.com";
 
 const SingleProject = (project = []) => {
   const { desc, title, github_url, stack, project_url } = project;
