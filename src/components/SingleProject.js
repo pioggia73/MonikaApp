@@ -13,7 +13,8 @@ const SingleProject = (project = []) => {
       <article className="feature">
         <div className="img-container">
           <img
-            src={api_url + project.image.formats.thumbnail.url}
+            // src={api_url + project.image.formats.thumbnail.url}
+            src={project.image.url}
             alt="computers"
             className="project-img"
           />
