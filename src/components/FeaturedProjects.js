@@ -8,8 +8,6 @@ import SingleProject from "./SingleProject";
 const FeaturedProjects = ({ title }) => {
   const { projects, isLoading, isError } = React.useContext(ProjectsContext);
 
-  console.log(projects);
-
   if (isLoading) {
     return <h3>Loading ...</h3>;
   }
@@ -41,13 +39,15 @@ const FeaturedProjects = ({ title }) => {
 const FeaturedProjectsContainer = styled.article`
   .featured {
     background: #fdfffe;
+    z-index: -2;
   }
 
   .container {
-    padding: 8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    justify-content: center;
+    gap: 6rem;
   }
 
   .btn-all {

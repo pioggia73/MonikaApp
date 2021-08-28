@@ -36,6 +36,7 @@ const NavContainer = styled.div`
   height: 6rem;
   background: linear-gradient(to right, #e0dbd8, #ece8e5);
   background: #eae6e3;
+
   .nav-center {
     width: 90vw;
     display: flex;
