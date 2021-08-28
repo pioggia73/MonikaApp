@@ -14,13 +14,7 @@ const Contact = () => {
       <section className="section contact-section">
         <Title title="contact me" />
         <article className="section-center">
-          <form
-            className="form-container"
-            name="contact"
-            netlify
-            netlify-honeypot="bot-field"
-            hidden
-          >
+          <form className="form-container" name="contact" data-netlify="true">
             <div className="form-group">
               <input
                 type="text"
