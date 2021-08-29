@@ -4,6 +4,7 @@ import { CoursesContext } from "../context/CoursesContext";
 import { FaAngleDoubleRight } from "react-icons/fa";
 ///////////////////////////////////////////////////////////
 import Title from "../components/Title";
+import Loading from "../components/Loading";
 
 const Courses = ({ title }) => {
   const { courses, isCoursesLoading, isCoursesError } =
@@ -12,7 +13,7 @@ const Courses = ({ title }) => {
   const [value, setValue] = React.useState(0);
 
   if (isCoursesLoading) {
-    return <h3>Loading ...</h3>;
+    return <Loading />;
   }
   if (isCoursesError) {
     return <h3>Error ...</h3>;

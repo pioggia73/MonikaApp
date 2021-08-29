@@ -42,7 +42,7 @@ const SidebarContainer = styled.div`
   .sidebar {
     height: 100vh;
     width: 60vw;
-    background: var(--clr-pink);
+    background: var(--color-teal-8);
     position: fixed;
     right: 0%;
     top: 0%;
@@ -53,8 +53,8 @@ const SidebarContainer = styled.div`
     padding: 3vh 3vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border-left: 2px solid var(--clr-dirty-blue);
+    gap: 10rem;
+    border-left: 2px solid var(--color-teal-0);
   }
 
   .show-sidebar {
@@ -63,13 +63,13 @@ const SidebarContainer = styled.div`
   }
 
   .close-btn {
-    color: var(--clr-grey-1);
-    font-size: 1.5rem;
+    color: var(--color-teal-0);
+    font-size: 2.5rem;
     background: transparent;
     border: transparent;
     position: fixed;
     right: 10%;
-    top: 5%;
+    top: 3%;
     cursor: pointer;
   }
 
@@ -120,11 +120,12 @@ const SidebarContainer = styled.div`
     font-size: 3.5vh;
     display: block;
     text-align: center;
-    color: var(--clr-grey-1);
+    color: var(--color-teal-0);
     letter-spacing: var(--spacing);
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     position: relative;
-    padding: 0 0.4rem;
+    padding: 0.7rem 1.4rem;
+    //z-index: 1;
   }
 
   .link a:link::after,
@@ -135,7 +136,7 @@ const SidebarContainer = styled.div`
     height: 100%;
     top: 0;
     left: 0;
-    background: var(--clr-dirty-pink);
+    background: var(--color-teal-0);
     opacity: 0;
     transform: scaleX(0);
     transform-origin: left;
@@ -149,27 +150,42 @@ const SidebarContainer = styled.div`
     transform: scaleX(1);
   }
 
+  .link a:hover {
+    color: var(--color-teal-8);
+    z-index: 2;
+  }
+
   //////////////////////////////   SOCIAL   ICONS
 
   .sidebar-icons {
     display: flex;
-    justify-content: flex-start;
+    //justify-content: flex-start;
+    gap: 4rem;
   }
 
   .sidebar-icons li {
     animation: slideUp 0.5s ease-in-out forwards;
     opacity: 0;
     display: block;
-    color: var(--clr-dirty-blue);
+    color: var(--color-teal-0);
 
     a {
       transition: all 0.6s linear;
-      padding: 0 2vw;
+      padding: 2vw;
+
+      svg {
+        font-size: 3rem;
+        transition: all 0.3s linear;
+      }
     }
   }
 
-  .sidebar-icons li a:hover {
-    color: var(--clr-blue);
+  a svg:hover {
+    transform: scale(1.4);
+  }
+
+  .sidebar-icons li:hover {
+    transform: scale(1.2);
   }
 
   @keyframes slideUp {
@@ -193,11 +209,6 @@ const SidebarContainer = styled.div`
 
   .sidebar-icons li:nth-of-type(3) {
     animation-delay: 0.75s;
-  }
-
-  .sidebar-icons li a {
-    font-size: 2rem;
-    color: var(--clr-grey-1);
   }
 
   @media screen and (min-width: 692px) {

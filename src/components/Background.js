@@ -11,17 +11,6 @@ const Background = () => {
   );
 };
 
-// const Wrapper = styled.section`
-//   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-//     url(${heroBcg});
-//   height: calc(100vh - 80px);
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   display: flex;
-//   align-items: center;
-// `;
-
 const Wrapper = styled.section`
   background: url(${heroBcg});
   height: calc(100vh - 6rem);

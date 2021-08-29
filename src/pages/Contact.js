@@ -17,8 +17,9 @@ const Contact = () => {
           <form
             className="form-container"
             name="contact"
-            method="POST"
-            data-netlify="true"
+            netlify
+            netlify-honeypot="bot-field"
+            hidden
           >
             <div className="form-group">
               <input

@@ -8,7 +8,7 @@ const Overlay = () => {
 const OverlayContainer = styled.section`
   width: 100%;
   height: 100%;
-  background-color: var(--clr-black);
+  background-color: var(--color-grey-main);
   opacity: 0.8;
   position: absolute;
   top: 0;

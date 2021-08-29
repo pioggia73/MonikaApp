@@ -3,17 +3,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProjectsContext } from "../context/ProjectsContext";
 import Title from "../components/Title";
+//import Loading from "../components/Loading";
 import SingleProject from "./SingleProject";
 
 const FeaturedProjects = ({ title }) => {
-  const { projects, isLoading, isError } = React.useContext(ProjectsContext);
+  const { projects } = React.useContext(ProjectsContext);
 
-  if (isLoading) {
-    return <h3>Loading ...</h3>;
-  }
-  if (isError) {
-    return <h3>Sorry, an error...</h3>;
-  }
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
+  // if (isError) {
+  //   return <h3>Sorry, an error...</h3>;
+  // }
 
   const tempProjects = projects.filter((project) => project.featured === true);
 
