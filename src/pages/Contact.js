@@ -31,6 +31,7 @@ const Contact = () => {
                 placeholder="your name ..."
                 required
               />
+              <input type="hidden" name="form-name" value="contact v1" />
               <label htmlFor="name" className="form-label">
                 Full Name
               </label>
