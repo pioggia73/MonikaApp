@@ -16,7 +16,7 @@ const Contact = () => {
         <article className="section-center">
           <form
             className="form-container"
-            name="contact"
+            name="contact v1"
             method="post"
             data-netlify="true"
             onSubmit="submit"
