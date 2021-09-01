@@ -16,13 +16,14 @@ const Contact = () => {
         <article className="section-center">
           <form
             className="form-container"
-            name="contact v1"
+            name="contact"
             method="post"
             data-netlify="true"
+            data-netlify-recaptcha="true"
             onSubmit="submit"
             netlify
           >
-            <input type="hidden" name="form-name" value="contact" />
+            {/* <input type="hidden" name="form-name" value="contact" /> */}
             <div className="form-group">
               <input
                 type="text"
