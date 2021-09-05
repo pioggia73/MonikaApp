@@ -5,6 +5,7 @@ import Title from "../components/Title";
 import Overlay from "../components/Overlay";
 import SingleProject from "../components/SingleProject";
 import Loading from "../components/Loading";
+import ErrorPage from "./ErrorPage";
 import { ProjectsContext } from "../context/ProjectsContext";
 import { CoursesContext } from "../context/CoursesContext";
 
@@ -17,7 +18,7 @@ const Projects = () => {
     return <Loading />;
   }
   if (isProjectsError) {
-    return <h3>Error...</h3>;
+    return <ErrorPage />;
   }
 
   return (

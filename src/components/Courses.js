@@ -5,6 +5,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 ///////////////////////////////////////////////////////////
 import Title from "../components/Title";
 import Loading from "../components/Loading";
+import ErrorPage from "../pages/ErrorPage"
 
 const Courses = ({ title }) => {
   const { courses, isCoursesLoading, isCoursesError } =
@@ -16,7 +17,7 @@ const Courses = ({ title }) => {
     return <Loading />;
   }
   if (isCoursesError) {
-    return <h3>Error ...</h3>;
+    return <ErrorPage />;
   }
 
   const courseUnique = [
