@@ -17,13 +17,9 @@ const Contact = () => {
           <form
             className="form-container"
             name="contact"
-            method="post"
+            method="POST"
             data-netlify="true"
-            data-netlify-recaptcha="true"
-            onSubmit="submit"
-            netlify
           >
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
             <div className="form-group">
               <input
                 type="text"
