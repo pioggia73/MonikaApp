@@ -14,17 +14,12 @@ const About = () => {
       <article className="section-center container">
         <div className="about-text">
           <p>
-            Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała
-            zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z
-            mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych
-            „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego:
-            „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie”
-            po polsku.Ogólnie znana teza głosi, iż użytkownika może rozpraszać
-            zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd.
-            Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele
-            różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do
-            zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
-            czytelnie” po polsku.
+            <span>Hey,</span>
+            <br />I am Monika. I have been a languages teacher for some years.
+            But some time ago I decided to change my career path and become a
+            front-web developer. I completed a lot of online courses. I am a
+            hard-working and determined person. I love coding and learning
+            languages.
           </p>
         </div>
         <div className="img-container">
@@ -49,10 +44,18 @@ const Wrapper = styled.article`
 
   .about-text p {
     line-height: 1.8;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 2rem;
+    //text-align: center;
     padding: 1rem 2rem;
     flex-wrap: wrap;
+
+    span {
+      font-size: 3rem;
+      color: var(--color-teal-8);
+      font-style: italic;
+      font-weight: 600;
+      text-shadow: 2px 2px 8px var(--color-teal-5);
+    }
   }
 
   .img-container {
