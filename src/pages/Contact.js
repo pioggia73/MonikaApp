@@ -16,7 +16,7 @@ const Contact = () => {
         <article className="section-center">
           <form
             className="form-container"
-            action="https://formspree.io/webdevelopermonika@gmail.com"
+            action="https://formspree.io/f/xpzkkebw"
             method="POST"
           >
             <div className="form-group">
