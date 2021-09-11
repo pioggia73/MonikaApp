@@ -37,13 +37,6 @@ const Projects = () => {
 };
 
 const ProjectsContainer = styled.section`
-  /* .projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    padding: 8rem;
-  } */
-
   .projects-container {
     padding: 6rem;
     display: grid;

@@ -129,6 +129,12 @@ const ContactWrapper = styled.section`
     color: var(--color-teal-8);
     padding: 2vh 1vw;
   }
+
+  @media (max-width: 68.75em) {
+    .form-container {
+      width: 60vw;
+    }
+  } ;
 `;
 
 export default Contact;
