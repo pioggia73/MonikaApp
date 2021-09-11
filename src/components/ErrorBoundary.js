@@ -21,9 +21,13 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError === true) {
       return (
-        <Wrapper className="container">
-          <article imageUrl="https://i.imgur.com/yW2W9SC.png"></article>
-          <p>Sorry, this page is broken</p>
+        <Wrapper>
+          <article
+            className="container"
+            // imageUrl="https://i.imgur.com/yW2W9SC.png"
+          >
+            <p>Sorry, this page is broken</p>
+          </article>
         </Wrapper>
       );
     }
@@ -38,6 +42,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   .container {
     display: inline-block;
     background-image: ${({ imageUrl }) => `url(${imageUrl})`};
