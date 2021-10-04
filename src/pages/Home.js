@@ -4,6 +4,7 @@ import Background from "../components/Background";
 import Overlay from "../components/Overlay";
 import Courses from "../components/Courses";
 import FeaturedProjects from "../components/FeaturedProjects";
+import Footer from "../components/Footer";
 import { CoursesContext } from "../context/CoursesContext";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       {isOpen ? <Overlay /> : null}
       <Courses />
       <FeaturedProjects />
+      <Footer />
     </main>
   );
 };

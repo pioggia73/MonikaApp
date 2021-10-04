@@ -159,7 +159,6 @@ const SidebarContainer = styled.div`
 
   .sidebar-icons {
     display: flex;
-    //justify-content: flex-start;
     gap: 4rem;
   }
 
